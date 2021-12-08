@@ -6,11 +6,11 @@
 #   the servo at a degree of 180 and back to 0 every 
 #   one second interval
 
-
 import time
 import board
 import pwmio
 from adafruit_motor import servo
+
 
 # create a PWMOut object on Pin GP16.
 pwm = pwmio.PWMOut(board.GP16, duty_cycle=2 ** 15, frequency=50)
